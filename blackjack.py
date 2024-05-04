@@ -38,6 +38,10 @@ SUITS = ["hearts", "clubs", "spades", "diamonds"]
 def build_cards():
     for suit in SUITS:
         for name, value in CARDS.items():
-            Card(suit, value, name)
+             card = Card(suit, value, name)
+
+def build_players():
+    dealer = Player("dealer", True)
+    player = Player("Alex", False)
             
             
