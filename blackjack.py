@@ -16,6 +16,9 @@
 # compare player's hand to dealer's hand
 # greater hand value wins
 
+import Card from cards
+import Player from Player
+
 CARDS = {"ace": 1,
          "two": 2,
          "three": 3,
@@ -33,3 +36,8 @@ CARDS = {"ace": 1,
 SUITS = ["hearts", "clubs", "spades", "diamonds"]
 
 def build_cards():
+    for suit in SUITS:
+        for name, value in CARDS.items():
+            Card(suit, value, name)
+            
+            
